@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podgląd Artykułu</title>
+    <style>
+        /* Generalne style */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Styl dla kontenera artykułu */
+        .container {
+            width: 80%;
+            max-width: 960px;
+            background-color: white;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        /* Efekt zanikania dla artykułu */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        h1 {
+            color: #333;
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        p {
+            color: #555;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        /* Styl dla obrazków */
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 20px 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Dla podpisów pod obrazkami */
+        .image-caption {
+            text-align: center;
+            font-size: 1rem;
+            color: #888;
+            margin-bottom: 30px;
+        }
+
+        /* Przycisk do ładowania artykułu */
+        .load-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .load-btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* Dodanie animacji dla przycisku */
+        .load-btn:active {
+            transform: scale(0.98);
+        }
+
+        /* Poprawki dla responsywności */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .container {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Wklej artykuł tutaj</h1>
+        <!-- Pusty kontener na artykuł -->
+        <div class="article-content">
+            <!-- Tu będzie wklejona treść artykułu -->
+        </div>
+        <button class="load-btn">Załaduj artykuł</button>
+    </div>
+
+    <script>
+        // Prosty kod JS, by pokazać, że artykuł został załadowany
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log("Artykuł załadowany!");
+        });
+    </script>
+
+</body>
+</html>
