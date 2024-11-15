@@ -16,8 +16,16 @@ Wymagania:
 
 Instrukcja uruchomienia
 
-1. **Pobierz repozytorium:**
+ **Pobierz repozytorium:**
    Jeśli jeszcze tego nie zrobiłeś, pobierz repozytorium na swoje lokalne urządzenie:
-   ```bash
-   git clone https://github.com/TwojeRepozytorium.git
-   cd TwojeRepozytorium
+
+**Upewnij się, że masz zainstalowany Python 3 oraz bibliotekę jinja2**
+
+**Stwórz plik tekstowy artykul.txt w tym samym folderze, w którym znajduje się skrypt. Pierwsza linia powinna zawierać tytuł artykułu, a reszta tekstu to treść artykułu.**
+
+**Uruchom skrypt Pythona, aby wygenerować szablon oraz podgląd artykułu**
+
+**Sprawdzenie wyników: Po uruchomieniu skryptu zostaną wygenerowane dwa pliki:**
+
+    szablon.html - Pusty szablon HTML, który jest gotowy do wklejenia treści artykułu.
+    podglad.html - Strona z pełnym podglądem artykułu.
